@@ -4,7 +4,8 @@
   "description": "This repo shoould remain private until fully made and published as it will be published towards hacktober fest",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/GDSC-RTU/quotier-readme-quotes#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.1"
   },
   "devDependencies": {
