@@ -20,24 +20,43 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/quote", async (req, res) => {
+  const query = req.query;
   /* Generating Our Random Quote on Each Request By default */
   const quoteObject = quotes[Math.floor(Math.random() * quotes.length)];
-  const quote = `${quoteObject.quote} - ${quoteObject.author}`;
+  if (query.type == "json") {
+    /* #############################################
+     Serving JSON if user goes to /quotes?type=json
+    ##############################################*/
+    /* ----- Sets the type of content sent  ----- */
+    res.setHeader("Content-Type", "text/html; charset=UTF-8");
+    /* Set the Cache type to public (Any cache can store the data) and the max-age */
+    res.setHeader("Cache-Control", `max-age=N, public`);
+    /* ---- sending svg as a response ---- */
+    res.send(quoteObject);
+  } else {
+    /* #######################################
+     Serving SVG by direct endpoint to /quotes
+    #########################################*/
 
-  /* ---- Setting up card properties,data---- */
-  let card = quoteCard(
-    theme.dark.textColor,
-    theme.dark.bg,
-    theme.dark.border,
-    quote,
-    theme.dark.hodeBorder
-  );
-  /* ----- Sets the type of content sent  ----- */
-  res.setHeader("Content-Type", "image/svg+xml");
-  /* Set the Cache type to public (Any cache can store the data) and the max-age */
-  res.setHeader("Cache-Control", `max-age=N, public`);
-  /* ---- sending svg as a response ---- */
-  res.send(card);
+    const quote = `${quoteObject.quote} - ${quoteObject.author}`;
+
+    /* ---- Setting up card properties,data---- */
+    let card = quoteCard(
+      theme.dark.textColor,
+      theme.dark.bg,
+      theme.dark.border,
+      quote,
+      theme.dark.hodeBorder
+    );
+
+    /* ----- Sets the type of content sent  ----- */
+    res.setHeader("Content-Type", "image/svg+xml");
+
+    /* Set the Cache type to public (Any cache can store the data) and the max-age */
+    res.setHeader("Cache-Control", `max-age=N, public`);
+    /* ---- sending svg as a response ---- */
+    res.send(card);
+  }
 });
 
 app.get("/all", (req, res) => {

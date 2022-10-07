@@ -25,6 +25,7 @@ In html
 
 - / => Will return basic Hello Page in API
 - /quote => Will return a random quote in rendered SVG form
+- /quote?type=json => Will return quote in json format
 - /all => Will return all quotes in JSON format within a single response
 
 ## Run the application locally
