@@ -11,7 +11,7 @@ API for Quotes📑 in JSON and rendered SVG form - Use it anywhere on GitHub, Yo
 
 ## How to use
 
-In your GitHUb readme
+In your GitHub readme
 
 ```markdown
 ![QUOTES](https://quotier.vercel.app/quote)
