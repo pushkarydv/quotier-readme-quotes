@@ -1,0 +1,14 @@
+{
+  "dark": {
+    "textColor": "#fff",
+    "bg": "#242b2e",
+    "borderColor": "transparent",
+    "hideBorder": false
+  },
+  "light": {
+    "bg": "#fff",
+    "textColor": "#242b2e",
+    "borderColor": "transparent",
+    "hideBorder": false
+  }
+}

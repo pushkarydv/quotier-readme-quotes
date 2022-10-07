@@ -3,13 +3,25 @@ const app = express();
 require("dotenv").config();
 const quotes = require("./quotes.json");
 const { quoteCard } = require("./src/quoteCard");
+const theme = require("./src/themes.json");
 /* Generating Our Random Quote on Each Request By default */
 const quoteObject = quotes[Math.floor(Math.random() * quotes.length)];
 const quote = `${quoteObject.quote} - ${quoteObject.author}`;
 
 /* ---- Handling get requests on all routes ----*/
 app.get("/", async (req, res) => {
-  let card = quoteCard("#fff", "#333", "#cad5e2", "#000", quote, "true");
+  type = req.query.theme;
+  if (type == undefined || type == "") {
+    type = "light";
+  }
+  let ColorTheme = theme[type];
+  let card = quoteCard(
+    ColorTheme.text,
+    ColorTheme.type,
+    ColorTheme.border,
+    quote,
+    ColorTheme.isBorder
+  );
   /* ----- Sets the type of content sent  ----- */
   res.setHeader("Content-Type", "image/svg+xml");
   /* Set the Cache type to public (Any cache can store the data) and the max-age */

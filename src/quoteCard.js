@@ -1,16 +1,9 @@
 const width = "100%";
 const height = "100%";
-const quoteCard = (
-  textColor,
-  bg,
-  borderColor,
-  codeColor,
-  qoute,
-  hideBorder
-) => {
+const quoteCard = (textColor, bg, borderColor, qoute, hideBorder = "false") => {
   let border = `2px solid ${borderColor}`;
-  if (hideBorder !== undefined) {
-    border = "2px solid transparent";
+  if (hideBorder == true) {
+    border = "none";
   }
   const card = `
     <svg class="" onload="myfunc()" id="quoteC" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,10 +49,7 @@ const quoteCard = (
             .quote {
               color: ${textColor};
             }
-            code {
-              font-size: 1.2rem;
-              color: ${codeColor};
-            }
+            
           </style>
           <div class="container">
             <div class="text">
