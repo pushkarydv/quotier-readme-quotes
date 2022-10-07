@@ -7,6 +7,8 @@
 
 API for Quotes📑 in JSON and rendered SVG form - Use it anywhere on GitHub, Your Website or wherever you like✨
 
+![QUOTES](https://quotier.vercel.app/quote)
+
 ## How to use
 
 In your GitHub readme
