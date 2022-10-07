@@ -2,7 +2,6 @@
  <h1> QUOTIER </h1>
  <img src="https://img.shields.io/github/package-json/v/GDSC-RTU/quotier-readme-quotes?color=g&label=QUOTIER">
  <img src="https://img.shields.io/npm/v/npm">
- <img src="https://img.shields.io/website?url=https%3A%2F%2Fquotier.vercel.app">
  <img src="https://img.shields.io/github/languages/code-size/GDSC-RTU/quotier-readme-quotes?logo=github">
 </div>
 
