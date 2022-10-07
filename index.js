@@ -1,9 +1,17 @@
+/* ---- Creating An Express app to serve api ---- */
 const express = require("express");
 const app = express();
+
+/* ---- using dotenv for Accessing Enviornmental Variables ---- */
 require("dotenv").config();
+
+/* ---- Importing JSON files (all the data) ---- */
 const quotes = require("./quotes.json");
-const { quoteCard } = require("./src/quoteCard");
 const theme = require("./src/themes.json");
+
+/* ---- Importing Card template ---- */
+const { quoteCard } = require("./src/quoteCard");
+
 /* Generating Our Random Quote on Each Request By default */
 const quoteObject = quotes[Math.floor(Math.random() * quotes.length)];
 const quote = `${quoteObject.quote} - ${quoteObject.author}`;
@@ -27,6 +35,7 @@ app.get("/quote", async (req, res) => {
   res.setHeader("Content-Type", "image/svg+xml");
   /* Set the Cache type to public (Any cache can store the data) and the max-age */
   res.setHeader("Cache-Control", `public, max-age=10`);
+  /* ---- sending svg as a response ---- */
   res.send(card);
 });
 
