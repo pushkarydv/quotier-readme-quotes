@@ -76,8 +76,6 @@ localhost:3000
 
 ## Contribution Guidelines
 
-Check [contribution.md](Contributing.md) if you want to learn how to make a contribution.
-
 Append your quote to quote.json inside the quote/ folder and raise the PR.
 
 ```
