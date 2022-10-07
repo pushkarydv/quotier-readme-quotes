@@ -23,10 +23,12 @@ In html
 
 ## Endpoints
 
-- / => Will return basic Hello Page in API
-- /quote => Will return a random quote in rendered SVG form
-- /quote?type=json => Will return quote in json format
-- /all => Will return all quotes in JSON format within a single response
+| EndPoint         | Returns                                            |
+| ---------------- | -------------------------------------------------- |
+| /                | Hello Page in API                                  |
+| /quote           | A random quote in rendered SVG form                |
+| /quote?type=json | Quote in json format                               |
+| /all             | All quotes in JSON format within a single response |
 
 ## Run the application locally
 
