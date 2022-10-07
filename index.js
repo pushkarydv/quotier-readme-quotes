@@ -1,4 +1,4 @@
-/* ---- Creating An Express app to serve api ---- */
+/* ---- Initiating An Express app to serve api  ---- */
 const express = require("express");
 const app = express();
 
@@ -41,6 +41,7 @@ app.get("/quote", async (req, res) => {
 });
 
 app.get("/all", (req, res) => {
+  /* ----Sending all quotes as a response ---- */
   res.send(quotes);
 });
 
@@ -52,7 +53,10 @@ app.get("/all", (req, res) => {
 */
 
 if (process.env.NODE_ENV === "development") {
-  const port = process.env.port || 3000;
+  /* Default port is set to 3000 You can define any other port here as per your requirement */
+  const port = 3000;
+
+  /* Starting a server at local system using the app listener */
   app.listen(port, () => {
     console.log(`listening on http://localhost:${port}`);
   });

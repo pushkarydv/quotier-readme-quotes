@@ -56,14 +56,14 @@ npm install
 
 - Setting Up development Enviornment create a `.env` file in root folver and add the following line
 
-```env
+```
 NODE_ENV = development
 ```
 
 - To run the application, type the following command in your terminal -
 
 ```
-npm run develop
+npm run dev
 ```
 
 - Access the results produced by accessing the following URL in your browser -
