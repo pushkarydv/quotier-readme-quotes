@@ -1,7 +1,7 @@
 {
   "name": "quotier",
   "version": "1.0.0",
-  "description": "This repo shoould remain private until fully made and published as it will be published towards hacktober fest",
+  "description": "API for Quotes📑 in JSON and rendered SVG form - Use it anywhere on GitHub, Your Website or wherever you like✨",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
