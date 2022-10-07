@@ -12,10 +12,6 @@ const theme = require("./src/themes.json");
 /* ---- Importing Card template ---- */
 const { quoteCard } = require("./src/quoteCard");
 
-/* Generating Our Random Quote on Each Request By default */
-const quoteObject = quotes[Math.floor(Math.random() * quotes.length)];
-const quote = `${quoteObject.quote} - ${quoteObject.author}`;
-
 /* ---- Handling get requests on all routes ----*/
 app.get("/", async (req, res) => {
   res.send(
@@ -24,6 +20,10 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/quote", async (req, res) => {
+  /* Generating Our Random Quote on Each Request By default */
+  const quoteObject = quotes[Math.floor(Math.random() * quotes.length)];
+  const quote = `${quoteObject.quote} - ${quoteObject.author}`;
+  
   let card = quoteCard(
     theme.dark.textColor,
     theme.dark.bg,
