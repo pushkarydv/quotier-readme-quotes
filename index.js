@@ -10,17 +10,18 @@ const quote = `${quoteObject.quote} - ${quoteObject.author}`;
 
 /* ---- Handling get requests on all routes ----*/
 app.get("/", async (req, res) => {
-  type = req.query.theme;
-  if (type == undefined || type == "") {
-    type = "light";
-  }
-  let ColorTheme = theme[type];
+  res.send(
+    "Hello There! Welcome to our quote app. To get A Rendered Quote go to /quote route"
+  );
+});
+
+app.get("/quote", async (req, res) => {
   let card = quoteCard(
-    ColorTheme.text,
-    ColorTheme.type,
-    ColorTheme.border,
+    theme.dark.textColor,
+    theme.dark.bg,
+    theme.dark.border,
     quote,
-    ColorTheme.isBorder
+    theme.dark.iodeBorder
   );
   /* ----- Sets the type of content sent  ----- */
   res.setHeader("Content-Type", "image/svg+xml");
