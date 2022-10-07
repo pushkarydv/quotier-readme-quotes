@@ -1,12 +1,13 @@
 <div align="center"> 
  <h1> QUOTIER </h1>
+ <img src="https://quotier.vercel.app/quote" alt="quotes"/>
+ <br/>
  <img src="https://img.shields.io/github/package-json/v/GDSC-RTU/quotier-readme-quotes?color=g&label=QUOTIER">
  <img src="https://img.shields.io/npm/v/npm">
  <img src="https://img.shields.io/github/languages/code-size/GDSC-RTU/quotier-readme-quotes?logo=github">
 </div>
 
-API for Quotes📑 in JSON and rendered SVG form - Use it anywhere on GitHub, Your Website or wherever you like✨
-
+## API for Quotes📑 in JSON and rendered SVG form - Use it anywhere on GitHub, Your Website or wherever you like✨
 ## How to use
 
 In your GitHub readme
@@ -76,8 +77,6 @@ localhost:3000
 ```
 
 ## Contribution Guidelines
-
-Check [contribution.md](Contributing.md) if you want to learn how to make a contribution.
 
 Append your quote to quote.json inside the quote/ folder and raise the PR.
 
