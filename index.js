@@ -1,10 +1,20 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
+const quotes = require("./quotes.json");
+const { quoteCard } = require("./src/quoteCard");
+/* Generating Our Random Quote on Each Request By default */
+const quoteObject = quotes[Math.floor(Math.random() * quotes.length)];
+const quote = `${quoteObject.quote} - ${quoteObject.author}`;
 
 /* ---- Handling get requests on all routes ----*/
 app.get("/", async (req, res) => {
-  res.send("Hello There! Welcome to our quote app");
+  let card = quoteCard("#fff", "#333", "#cad5e2", "#000", quote, "true");
+  /* ----- Sets the type of content sent  ----- */
+  res.setHeader("Content-Type", "image/svg+xml");
+  /* Set the Cache type to public (Any cache can store the data) and the max-age */
+  res.setHeader("Cache-Control", `public, max-age=10`);
+  res.send(card);
 });
 
 /* 
