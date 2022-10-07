@@ -40,6 +40,10 @@ app.get("/quote", async (req, res) => {
   res.send(card);
 });
 
+app.get("/all", (req, res) => {
+  res.send(quotes);
+});
+
 /* 
     Using an Environmentable variable to 
     check if it's running on develoment 
