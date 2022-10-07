@@ -34,7 +34,7 @@ app.get("/quote", async (req, res) => {
   /* ----- Sets the type of content sent  ----- */
   res.setHeader("Content-Type", "image/svg+xml");
   /* Set the Cache type to public (Any cache can store the data) and the max-age */
-  res.setHeader("Cache-Control", `public, max-age=10`);
+  res.setHeader("Cache-Control", `max-age=N, public`);
   /* ---- sending svg as a response ---- */
   res.send(card);
 });
