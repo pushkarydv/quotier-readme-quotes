@@ -5,8 +5,6 @@
  <img src="https://img.shields.io/github/languages/code-size/GDSC-RTU/quotier-readme-quotes?logo=github">
 </div>
 
-## Use
-
 API for Quotes📑 in JSON and rendered SVG form - Use it anywhere on GitHub, Your Website or wherever you like✨
 
 ## How to use
@@ -27,6 +25,7 @@ In html
 
 - / => Will return basic Hello Page in API
 - /quote => Will return a random quote in rendered SVG form
+- /all => Will return all quotes in JSON format within a single response
 
 ## Run the application locally
 
@@ -37,7 +36,6 @@ node --version
 ```
 
 - Fork this repository.
-
 - Clone this repository by running the following command in your terminal -
 
 ```
