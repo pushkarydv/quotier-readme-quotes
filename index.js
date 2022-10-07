@@ -23,13 +23,14 @@ app.get("/quote", async (req, res) => {
   /* Generating Our Random Quote on Each Request By default */
   const quoteObject = quotes[Math.floor(Math.random() * quotes.length)];
   const quote = `${quoteObject.quote} - ${quoteObject.author}`;
-  
+
+  /* ---- Setting up card properties,data---- */
   let card = quoteCard(
     theme.dark.textColor,
     theme.dark.bg,
     theme.dark.border,
     quote,
-    theme.dark.iodeBorder
+    theme.dark.hodeBorder
   );
   /* ----- Sets the type of content sent  ----- */
   res.setHeader("Content-Type", "image/svg+xml");

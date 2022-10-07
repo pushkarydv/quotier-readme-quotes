@@ -5,6 +5,7 @@ const quoteCard = (textColor, bg, borderColor, qoute, hideBorder = "false") => {
   if (hideBorder == true) {
     border = "none";
   }
+  /* ---- creating a svg based card template ---- */
   const card = `
     <svg class="" onload="myfunc()" id="quoteC" fill="none" xmlns="http://www.w3.org/2000/svg">
     <script>
@@ -63,4 +64,5 @@ const quoteCard = (textColor, bg, borderColor, qoute, hideBorder = "false") => {
   return card;
 };
 
+/* ---- Exporting this card as it will be used as a tempplate ---- */
 module.exports = { quoteCard };
