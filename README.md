@@ -32,6 +32,17 @@ In html
 | /quote?type=json | Quote in json format                               |
 | /all             | All quotes in JSON format within a single response |
 
+## Contribution Guidelines
+
+Append your quote to quote.json inside the quote/ folder and raise the PR.
+
+```
+{
+    "quote":"Your new Quote",
+    "author":"Author of your quote",
+}
+```
+
 ## Run the application locally
 
 - Make sure you have NodeJS installed. Check it by typing this command in your terminal -
@@ -59,7 +70,7 @@ cd quotier-readme-quote
 npm install
 ```
 
-- Setting Up development Enviornment create a `.env` file in root folver and add the following line
+- **Setting Up development Enviornment create a `.env` file in root folver and add the following line**
 
 ```
 NODE_ENV = development
@@ -75,17 +86,6 @@ npm run dev
 
 ```
 localhost:3000
-```
-
-## Contribution Guidelines
-
-Append your quote to quote.json inside the quote/ folder and raise the PR.
-
-```
-{
-    "quote":"Your new Quote",
-    "author":"Author of your quote",
-}
 ```
 
 ## Contributors
