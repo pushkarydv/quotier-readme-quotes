@@ -8,6 +8,7 @@
 </div>
 
 ## API for Quotes📑 in JSON and rendered SVG form - Use it anywhere on GitHub, Your Website or wherever you like✨
+
 ## How to use
 
 In your GitHub readme
@@ -30,6 +31,17 @@ In html
 | /quote           | A random quote in rendered SVG form                |
 | /quote?type=json | Quote in json format                               |
 | /all             | All quotes in JSON format within a single response |
+
+## Contribution Guidelines
+
+Append your quote to quote.json inside the quote/ folder and raise the PR.
+
+```
+{
+    "quote":"Your new Quote",
+    "author":"Author of your quote",
+}
+```
 
 ## Run the application locally
 
@@ -58,7 +70,7 @@ cd quotier-readme-quote
 npm install
 ```
 
-- Setting Up development Enviornment create a `.env` file in root folver and add the following line
+- **Setting Up development Enviornment create a `.env` file in root folver and add the following line**
 
 ```
 NODE_ENV = development
@@ -76,18 +88,8 @@ npm run dev
 localhost:3000
 ```
 
-## Contribution Guidelines
+## Contributors
 
-Append your quote to quote.json inside the quote/ folder and raise the PR.
-
-```
-{
-    "quote":"Your new Quote",
-    "author":"Author of your quote",
-}
-```
-
-### Note :
-
-- Please avoid the repetition of quotes.
-- Do not make any changes in other files.
+<a href="https://github.com/pushkarydv/quotier-readme-quotes/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pushkarydv/quotier-readme-quotes" />
+</a>
