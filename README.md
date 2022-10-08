@@ -55,7 +55,7 @@ node --version
 - Clone this repository by running the following command in your terminal -
 
 ```
-git clone https://github.com/GDSC-RTU/quotier-readme-quote
+git clone https://github.com/pushkarydv/quotier-readme-quote
 ```
 
 - cd into the folder by using the following command -
