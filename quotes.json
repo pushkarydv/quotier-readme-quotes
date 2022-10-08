@@ -1570,5 +1570,9 @@
   {
     "quote": "We all make choices, but in the end our choices make us",
     "author": "Andrew Ryan"
+  },
+  {
+    "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+    "author": "Martin Fowler"
   }
 ]
