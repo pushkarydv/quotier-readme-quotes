@@ -87,9 +87,3 @@ npm run dev
 ```
 localhost:3000
 ```
-
-## Contributors
-
-<a href="https://github.com/pushkarydv/quotier-readme-quotes/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pushkarydv/quotier-readme-quotes" />
-</a>
