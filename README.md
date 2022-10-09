@@ -72,7 +72,7 @@ cd quotier-readme-quote
 npm install
 ```
 
-- **Setting Up development Enviornment create a `.env` file in root folver and add the following line**
+- **Setting Up development Enviornment create a `.env` file in root folder and add the following line**
 
 ```
 NODE_ENV = development
