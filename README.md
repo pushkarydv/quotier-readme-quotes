@@ -25,12 +25,12 @@ In html
 
 ## Endpoints
 
-| EndPoint         | Returns                                            |
-| ---------------- | -------------------------------------------------- |
-| /                | Hello Page in API                                  |
-| /quote           | A random quote in rendered SVG form                |
-| /quote?type=json | Quote in json format                               |
-| /all             | All quotes in JSON format within a single response |
+| EndPoint                                                       | Returns                                            |
+| -------------------------------------------------------------- | -------------------------------------------------- |
+| [/](https://quotier.vercel.app/)                               | Hello Page in API                                  |
+| [/quote](https://quotier.vercel.app/quote)                     | A random quote in rendered SVG form                |
+| [/quote?type=json](https://quotier.vercel.app/quote?type=json) | Quote in json format                               |
+| [/all](https://quotier.vercel.app/all)                         | All quotes in JSON format within a single response |
 
 ## Contribution Guidelines
 
@@ -43,7 +43,9 @@ Append your quote to quote.json inside the quote/ folder and raise the PR.
 }
 ```
 
-## Run the application locally
+<details>
+
+<summary>Run the application locally</summary>
 
 - Make sure you have NodeJS installed. Check it by typing this command in your terminal -
 
@@ -87,3 +89,5 @@ npm run dev
 ```
 localhost:3000
 ```
+
+</details>
