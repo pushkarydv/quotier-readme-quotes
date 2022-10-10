@@ -28,11 +28,11 @@ app.get("/quote", async (req, res) => {
      Serving JSON if user goes to /quotes?type=json
     ##############################################*/
     /* ----- Sets the type of content sent  ----- */
-    res.setHeader("Content-Type", "text/html; charset=UTF-8");
+    res.setHeader("Content-Type", "application/json; charset=UTF-8");
     /* Set the Cache type to public (Any cache can store the data) and the max-age */
     res.setHeader("Cache-Control", `max-age=N, public`);
     /* ---- sending svg as a response ---- */
-    res.send(quoteObject);
+    res.send(JSON.stringify(quoteObject, null, 4));
   } else {
     /* #######################################
      Serving SVG by direct endpoint to /quotes
