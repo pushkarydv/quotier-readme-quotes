@@ -1740,6 +1740,7 @@
     "author": "Will Smith"
   },
   {
+
     "quote":"Let everything happen to you :Beauty and terror. Just keep going. No feeling is final.",
     "author":"Rainer Maria Rilke"
   },
@@ -1770,5 +1771,9 @@
   {
       "quote":"Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.",
       "author":"Albus Dumbledore"
+  },
+  {
+    "quote": "I have learned not to allow rejection to move me.",
+    "author": "Cicely Tyson"
   }
 ]
