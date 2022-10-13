@@ -32,6 +32,18 @@ In html
 | [/quote?type=json](https://quotier.vercel.app/quote?type=json) | Quote in json format                               |
 | [/all](https://quotier.vercel.app/all)                         | All quotes in JSON format within a single response |
 
+## Themes
+By deafult, when a request to the ***/quote*** endpoint is sent, it returns an svg with the dark theme. To specify a custom theme, use the ***theme*** query param. The following request returns an svg with the blue theme.
+
+    https://quotier.vercel.app/quote?theme=blue
+
+![QUOTES](https://quotier.vercel.app/quote?theme=blue)
+
+## Available Themes
+ - dark (default)
+ - light
+ - blue
+
 ## Contribution Guidelines
 
 Append your quote to quote.json inside the quote/ folder and raise the PR.
