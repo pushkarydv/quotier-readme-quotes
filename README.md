@@ -43,6 +43,8 @@ By deafult, when a request to the ***/quote*** endpoint is sent, it returns an s
  - dark (default)
  - light
  - blue
+ - old_lilac
+ - light_gray
 
 ## Contribution Guidelines
 

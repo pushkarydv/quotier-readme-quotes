@@ -16,5 +16,17 @@
     "textColor": "#fff",
     "borderColor": "#000000",
     "hideBorder": false
+  },
+  "old_lilac": {
+    "bg": "#8F6593",
+    "textColor": "#fff",
+    "borderColor": "#542E3A",
+    "hideBorder": false
+  },
+   "light_gray": {
+    "bg": "#CDCDCD",
+    "textColor": "#000000",
+    "borderColor": "#AEA4BF",
+    "hideBorder": false
   }
 }
