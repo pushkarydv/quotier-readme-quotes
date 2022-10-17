@@ -66,13 +66,14 @@ app.get("/all", (req, res) => {
 
 /* 
     Using an Environmentable variable to 
-    check if it's running on develoment 
-    server - onlyu run in dev else vercel 
+    check if it's running on development 
+    server - only you run in dev, else vercel 
     will handle in next method
 */
 
 if (process.env.NODE_ENV === "development") {
-  /* Default port is set to 3000 You can define any other port here as per your requirement */
+  /* Default port is set to 3000. 
+  You can define any other port here as per your requirement */
   const port = 3000;
 
   /* Starting a server at local system using the app listener */
