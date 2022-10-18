@@ -10,5 +10,11 @@
     "textColor": "#242b2e",
     "borderColor": "transparent",
     "hideBorder": false
+  },
+  "blue": {
+    "bg": "#5BC8F7",
+    "textColor": "#fff",
+    "borderColor": "#000000",
+    "hideBorder": false
   }
 }

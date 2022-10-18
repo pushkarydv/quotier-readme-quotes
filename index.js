@@ -7,7 +7,7 @@ require("dotenv").config();
 
 /* ---- Importing JSON files (all the data) ---- */
 const quotes = require("./quotes.json");
-const theme = require("./src/themes.json");
+const themes = require("./src/themes.json");
 
 /* ---- Importing Card template ---- */
 const { quoteCard } = require("./src/quoteCard");
@@ -41,13 +41,31 @@ app.get("/quote", async (req, res) => {
     const quote = `${quoteObject.quote} - ${quoteObject.author}`;
 
     /* ---- Setting up card properties,data---- */
-    let card = quoteCard(
-      theme.dark.textColor,
-      theme.dark.bg,
-      theme.dark.border,
-      quote,
-      theme.dark.hodeBorder
-    );
+
+    let card;
+    if (query.theme) {
+      for (const key in themes) {
+        if (key === query.theme) {
+          card = quoteCard(
+            themes[key].textColor,
+            themes[key].bg,
+            themes[key].borderColor,
+            quote,
+            themes[key].hideBorder
+          );
+        }
+      }
+
+    }
+    else {
+      card = quoteCard(
+        themes.dark.textColor,
+        themes.dark.bg,
+        themes.dark.borderColor,
+        quote,
+        themes.dark.hideBorder
+      );
+    }
 
     /* ----- Sets the type of content sent  ----- */
     res.setHeader("Content-Type", "image/svg+xml");
