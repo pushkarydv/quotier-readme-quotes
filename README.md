@@ -30,10 +30,11 @@ In html
 | [/](https://quotier.vercel.app/)                               | Hello Page in API                                  |
 | [/quote](https://quotier.vercel.app/quote)                     | A random quote in rendered SVG form                |
 | [/quote?type=json](https://quotier.vercel.app/quote?type=json) | Quote in json format                               |
+| [/quote?theme=light](https://quotier.vercel.app/quote?theme=light) | Quote in specified theme  
 | [/all](https://quotier.vercel.app/all)                         | All quotes in JSON format within a single response |
 
 ## Themes
-By deafult, when a request to the ***/quote*** endpoint is sent, it returns an svg with the dark theme. To specify a custom theme, use the ***theme*** query param. The following request returns an svg with the blue theme.
+By default, when a request to the ***/quote*** endpoint is sent, it returns an svg with the dark theme. To specify a custom theme, use the ***theme*** query param. The following request returns an svg with the blue theme.
 
     https://quotier.vercel.app/quote?theme=blue
 
